@@ -47,6 +47,12 @@ const baseConfig = {
                     to: ".",
                     context: "src"
                 },
+                {
+                    force: true,
+                    from: "*.woff2",
+                    to: "fonts",
+                    context: "assets/fonts"
+                },
             ]
         })
     ]

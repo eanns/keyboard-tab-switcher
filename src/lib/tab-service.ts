@@ -106,6 +106,7 @@ export class TabService {
             item.dataset.id = tab.id.toString();
             item.onclick = () => {
                 browser.runtime.sendMessage({ action: "switch-tab", tabId: tab.id });
+                window.close();
             };
 
             const favicon = document.createElement("img");
